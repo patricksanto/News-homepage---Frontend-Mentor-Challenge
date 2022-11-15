@@ -1,0 +1,12 @@
+.principal {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 25px;
+}
+
+.principal-photo img {
+  max-width: 100%;
+  display: block;
+}
