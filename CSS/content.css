@@ -1,12 +1,23 @@
 .principal {
   display: grid;
-  grid-template-columns: 2fr 1fr;
   max-width: 1100px;
-  margin: 0 auto;
   gap: 25px;
+  margin: 0 auto;
+  grid-template-areas:
+    "photo photo new"
+    "title text new";
 }
 
 .principal-photo img {
   max-width: 100%;
-  display: block;
+  grid-area: photo;
+}
+.title {
+  grid-area: title;
+}
+.principal-content {
+  grid-area: text;
+}
+.new {
+  grid-area: new;
 }
