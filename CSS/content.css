@@ -8,6 +8,11 @@
   gap: 25px;
   padding: 10px;
 }
+.principal-content {
+  display: grid;
+  align-content: space-between;
+  justify-items: start;
+}
 .principal-photo {
   grid-area: photo;
 }
@@ -27,16 +32,23 @@
 }
 .principal-content p {
   font-size: 15px;
-  color: #01011b;
+  color: gray;
 }
 .principal-content button {
   padding: 15px 30px;
   background-color: hsl(5, 85%, 63%);
-  color: red;
+  text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
   font-weight: bold;
   border: none;
   margin-top: 35px;
+  display: inline-block;
+}
+.principal-content a {
+  color: white;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
 }
 .new {
   grid-area: new;
